@@ -6,18 +6,24 @@
     <body>
     
     <div id="drop-area" ondrop="dropHandler(event);">
-        <p>Drag and drop your portfolio in JSON file</p>
+        <p id="drop-area-message">Drag and drop your portfolio in JSON file</p>
     </div>      
 
-    <div id="canvas-id" width="600" height="500" float="left">
-        <canvas id="myCanvas" width="600" height="500" style="border:1px solid #000000;"></canvas>
-    </div>  
     
+        <div id="canvas-id" width="700" height="600" style="margin: 10px;">
+            <canvas id="myCanvas" width="700" height="600" style="border:1px solid #000000;"></canvas>
+        </div>  
+        <div id="canvas-id-2" width="700" height="600" style="margin: 10px;">
+            <canvas id="myCanvas2" width="700" height="600" style="border:1px solid #000000;"></canvas>
+        </div>  
+        
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
+    <script src="js/index.js"></script>
     <script src="js/dragAndDropConf.js"></script>
-    <script src="js/carteraInversionPorcentaje.js"></script>
-    <script src="js/loadFile.js"></script>
+    <script src="js/chartGenerator.js"></script>
+    <script src="js/dragAndDropModel.js"></script>
 
     </body>
 </html>
